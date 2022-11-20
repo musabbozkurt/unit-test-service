@@ -1,4 +1,4 @@
-package com.mb.testservice.controller;
+package com.mb.testservice.api.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mb.testservice.api.controller.TutorialController;
