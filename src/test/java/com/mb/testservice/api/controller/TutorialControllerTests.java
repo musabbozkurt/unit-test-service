@@ -1,7 +1,6 @@
 package com.mb.testservice.api.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mb.testservice.api.controller.TutorialController;
 import com.mb.testservice.api.request.ApiTutorialRequest;
 import com.mb.testservice.api.request.ApiTutorialUpdateRequest;
 import com.mb.testservice.api.response.ApiTutorialResponse;
