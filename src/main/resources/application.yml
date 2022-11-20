@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: live-data-service
+    name: unit-test-service
 
   mvc:
     pathmatch:

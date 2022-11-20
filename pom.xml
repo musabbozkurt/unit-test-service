@@ -10,10 +10,10 @@
     </parent>
 
     <groupId>com.mb</groupId>
-    <artifactId>rest-controller-unit-test</artifactId>
+    <artifactId>unit-test-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rest-controller-unit-test</name>
-    <description>Spring Boot test Rest Controller with @WebMvcTest</description>
+    <name>unit-test-service</name>
+    <description>Spring Boot test Rest Controller with @WebMvcTest, Service and Mapper</description>
 
     <properties>
         <java.version>17</java.version>

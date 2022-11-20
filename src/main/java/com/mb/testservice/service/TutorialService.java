@@ -11,7 +11,7 @@ public interface TutorialService {
 
     Tutorial save(Tutorial tutorial);
 
-    Tutorial save(long id, Tutorial tutorial);
+    Tutorial update(long id, Tutorial tutorial);
 
     void deleteById(long id);
 
