@@ -38,7 +38,7 @@ public class TutorialController {
 
     @PutMapping("/tutorials/{id}")
     public ResponseEntity<ApiTutorialResponse> updateTutorial(@PathVariable("id") long id, @RequestBody ApiTutorialUpdateRequest apiTutorialUpdateRequest) {
-        return new ResponseEntity<>(tutorialMapper.map(tutorialService.save(id, tutorialMapper.map(apiTutorialUpdateRequest))), HttpStatus.OK);
+        return new ResponseEntity<>(tutorialMapper.map(tutorialService.update(id, tutorialMapper.map(apiTutorialUpdateRequest))), HttpStatus.OK);
     }
 
     @DeleteMapping("/tutorials/{id}")

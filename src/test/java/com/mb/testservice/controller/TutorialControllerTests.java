@@ -155,7 +155,7 @@ class TutorialControllerTests extends BaseUnitTest {
         ApiTutorialResponse apiTutorialResponse = getUpdatedApiTutorialResponse();
 
         when(tutorialMapper.map(apiTutorialUpdateRequest)).thenReturn(updatedTutorial);
-        when(tutorialService.save(id, updatedTutorial)).thenReturn(updatedTutorial);
+        when(tutorialService.update(id, updatedTutorial)).thenReturn(updatedTutorial);
         when(tutorialMapper.map(updatedTutorial)).thenReturn(apiTutorialResponse);
 
         mockMvc.perform(put("/api/tutorials/{id}", id).contentType(MediaType.APPLICATION_JSON)
@@ -175,7 +175,7 @@ class TutorialControllerTests extends BaseUnitTest {
         Tutorial updatedTutorial = getUpdatedTutorial();
 
         when(tutorialMapper.map(apiTutorialUpdateRequest)).thenReturn(updatedTutorial);
-        when(tutorialService.save(id, updatedTutorial)).thenThrow(new BaseException(TestServiceErrorCode.NOT_FOUND));
+        when(tutorialService.update(id, updatedTutorial)).thenThrow(new BaseException(TestServiceErrorCode.NOT_FOUND));
 
         mockMvc.perform(put("/api/tutorials/{id}", id).contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(apiTutorialUpdateRequest)))

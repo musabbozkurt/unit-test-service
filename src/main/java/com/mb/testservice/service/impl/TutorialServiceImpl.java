@@ -40,7 +40,7 @@ public class TutorialServiceImpl implements TutorialService {
     }
 
     @Override
-    public Tutorial save(long id, Tutorial tutorial) {
+    public Tutorial update(long id, Tutorial tutorial) {
         Tutorial byId = findById(id);
         byId.setTitle(tutorial.getTitle());
         byId.setDescription(tutorial.getDescription());
